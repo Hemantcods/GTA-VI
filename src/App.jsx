@@ -68,7 +68,7 @@ function App() {
     })
     const main = document.querySelector(".main");
     main?.addEventListener("mousemove", function (e) {
-      console.log(e.clientX, e.clientY);
+      // console.log(e.clientX, e.clientY);
       const XMove = (e.clientX / window.innerWidth - 0.5) * 40;
       gsap.to(".imagesdiv .text", {
         x: `${XMove * 0.5}}`,
